@@ -36,6 +36,12 @@
       h3{
         margin-left: 16px;
       }
+      &:hover{
+        background-color: $primary-color-light;
+      }
+      &:active{
+        background-color: $primary-color;
+      }
     }
   }
 }
