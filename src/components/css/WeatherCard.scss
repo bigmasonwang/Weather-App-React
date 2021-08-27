@@ -1,0 +1,5 @@
+@import './index.scss';
+
+.weather_card {
+  @extend %weather-card;
+}
