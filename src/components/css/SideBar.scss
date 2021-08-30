@@ -7,39 +7,42 @@
     input {
       padding: 14px;
       border-radius: 10px;
-      border:0;
+      border: 0;
+      &:focus {
+        outline: none;
+      }
     }
     button {
       background-color: $secondary-color;
-      border:$secondary-color solid;
-      padding: 10px;
+      border: none;
+      padding: 14px;
       border-radius: 10px;
-      &:hover{
+      cursor: pointer;
+      &:hover {
         background-color: $primary-color-light;
-        border: $primary-color-light solid;
       }
-      &:active{
+      &:active {
         background-color: $primary-color;
-        border:$primary-color solid;
       }
     }
   }
 
   .side_bar_history {
-    .history{
+    .history {
       margin-top: 16px;
       width: 284px;
-      height:44px;
+      height: 44px;
       line-height: 44px;
       border-radius: 10px;
       background-color: $secondary-color;
-      h3{
+      cursor: pointer;
+      h3 {
         margin-left: 16px;
       }
-      &:hover{
+      &:hover {
         background-color: $primary-color-light;
       }
-      &:active{
+      &:active {
         background-color: $primary-color;
       }
     }

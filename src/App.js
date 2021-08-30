@@ -1,10 +1,8 @@
-import WeatherScreen from "./components/WeatherScreen";
-import 'normalize.css'
+import WeatherScreen from './components/WeatherScreen';
+import 'normalize.css';
 
 function App() {
-  return (
-    <WeatherScreen />
-  );
+  return <WeatherScreen />;
 }
 
 export default App;

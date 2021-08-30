@@ -13,10 +13,9 @@ const SideBar = (props) => {
     }
     setSearchText('');
   };
-  const handleHistoryClick = (e) =>{
-    // console.log(e.target.innerHTML);
+  const handleHistoryClick = (e) => {
     props.handleCityChange(e.target.innerHTML);
-  }
+  };
 
   return (
     <div className='side_bar'>

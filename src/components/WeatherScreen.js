@@ -9,7 +9,7 @@ const WeatherScreen = () => {
   const [curCity, setCurCity] = useState('beijing');
   const [curWeather, setCurWeather] = useState({});
   const [dailyWeather, setDailyWeather] = useState([]);
-  
+
   useEffect(() => {
     const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
     const fetchWeatherData = () => {
@@ -30,9 +30,9 @@ const WeatherScreen = () => {
                 setCurWeather(res.data.current);
                 setDailyWeather(res.data.daily);
               });
-          }
-          else {
-            alert(`${curCity} invalid!`)
+          } else {
+            alert(`${curCity} invalid!`);
+            setCurCity('Beijing');
           }
         });
     };
