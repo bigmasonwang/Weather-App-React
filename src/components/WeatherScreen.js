@@ -6,7 +6,7 @@ import './css/WeatherScreen.scss';
 import ForecastCard from './ForecastCard';
 
 const WeatherScreen = () => {
-  const [curCity, setCurCity] = useState('beijing');
+  const [curCity, setCurCity] = useState('Beijing');
   const [curWeather, setCurWeather] = useState({});
   const [dailyWeather, setDailyWeather] = useState([]);
 
